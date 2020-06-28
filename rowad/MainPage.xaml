@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage 
+            xmlns:local="clr-namespace:rowad.View"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:forms="clr-namespace:MediaManager.Forms;assembly=MediaManager.Forms"
+            MasterBehavior="Popover"
+                mc:Ignorable="d" x:Class="rowad.MainPage">
+    <MasterDetailPage.Master>
+        <ContentPage Title="My Title">
+            <StackLayout Margin="10">
+                <Image Source="rowad.png"/>
+                <Button x:Name="btn1" Text="موقعنا" BorderRadius="20" Clicked="fun_Clicked"/>
+                <Button x:Name="btn2" Text="جامعات" BorderRadius="20" Clicked="fun_Clicked"/>
+                <Button x:Name="btn3" Text="كليات" BorderRadius="20" Clicked="fun_Clicked"/>
+                <Button x:Name="btn4" Text="مراكز رواد" BorderRadius="20" Clicked="fun_Clicked"/>
+                <Button x:Name="btn5" Text="خرائط مراكز رواد" BorderRadius="20" Clicked="fun_Clicked"/>
+                <Button x:Name="btn6" Text="عن رواد" BorderRadius="20" Clicked="fun_Clicked"/>
+                
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <local:HomeTabPage />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

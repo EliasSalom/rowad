@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="rowad.locationPage"
+             Title="مركزنا">
+    <ContentPage.Content>
+        <StackLayout Padding="30" Spacing="20" HorizontalOptions="Center">
+            <Label x:Name="Name" Text="" FontSize="20" HorizontalOptions="Center"/>
+            <Label x:Name="Loc" Text="" FontSize="15" HorizontalOptions="Center"/>
+            <Label x:Name="Address" Text="" FontSize="15" HorizontalOptions="Center"/>
+            <Label x:Name="pho" Text="" FontSize="15" HorizontalOptions="Center"/>
+            <Label x:Name="Email" Text="" FontSize="15" HorizontalOptions="Center"/>
+
+            <Button x:Name="Call" Text="اتصل بالمنظمة" Clicked="MakeCall" HorizontalOptions="Center" WidthRequest="100" HeightRequest="40" BorderRadius="20"/>
+            <Image x:Name="Logo" HeightRequest="100" HorizontalOptions="Center"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

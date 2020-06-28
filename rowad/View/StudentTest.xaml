@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             mc:Ignorable="d"
+             x:Class="rowad.StudentTest">
+    <ContentPage.Content>
+        <StackLayout Padding="30" Spacing="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="160" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                
+                <Label x:Name="quiz_titel" Text="{Binding FullName}" HorizontalOptions="CenterAndExpand" FontSize="20" Grid.Row="0"/>
+                <Slider x:Name="answare" Maximum="10" Minimum="1" ThumbImageSource="hart2.png" MaximumTrackColor="Red" MinimumTrackColor="Green" ValueChanged="Answare_ValueChanged" Grid.Row="1"/>
+                
+                <!--<input:AdvancedSlider MaxValue="10" MinValue="1" StepValue="1" Title="اختر جواباً" ValueSuffix="good" ValuePrefix="bad"/>-->
+                <Image x:Name="Rowad_Logo"/>
+                <StackLayout x:Name="goodbad" Grid.Row="2">
+                <Grid >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="ليس ملائمًا" HorizontalTextAlignment="Start" Grid.Column="0"/>
+                    <Label x:Name="title_label" Text="{Binding FullName}" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                        <Label Text="ملائم جدًّا" Grid.Column="2" HorizontalTextAlignment="End"/>
+                </Grid>
+                </StackLayout>
+                <Button x:Name="Send" Text="أجب" Clicked="Send_Clicked" BorderRadius="10" BorderWidth="3" Grid.Row="3"/>
+                <ProgressBar x:Name="ProgBar" Progress="0" Grid.Row="4"/>
+                
+                <Label x:Name="ahoz" Grid.Row="5" HorizontalOptions="Center"/>
+                <Label Text="بنيت هذه الاستمارة بالتعاون مع البروفسور ايتمار جاتي" Grid.Row="6"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

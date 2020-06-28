@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="rowad.View.InfoPage"
+             Title="من نحن">
+    <ContentPage.Content>
+        <ScrollView >
+            <StackLayout Padding="20" Spacing="20" HorizontalOptions="Center">
+                    <Label Text="من نحن" FontSize="20" HorizontalOptions="Center" TextColor="#19B5FE"/>
+                    <Image x:Name="pen"/>
+                    <Image x:Name="Rowad_img"/>
+                <Label x:Name="info" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="الايميل" HorizontalOptions="Center"/>
+                    <Label Text="office@rowad.org.il" HorizontalOptions="Center"/>
+                    <Label Text="رقم مكتب رواد الرئيسي" HorizontalOptions="Center"/>
+                    <Label Text="1700-555-606" HorizontalOptions="Center"/>
+            </StackLayout>
+        </ScrollView>
+        </ContentPage.Content>
+    </ContentPage>

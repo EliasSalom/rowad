@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="rowad.View.CollegeListPage">
+    <ContentPage.Content>
+        <StackLayout Padding="10" Spacing="10">
+            <Label Text="كليات" FontSize="20" HorizontalOptions="Center" TextColor="#19B5FE"/>
+            <ListView x:Name="CollegeList" 
+                      ItemTapped="CollegeList_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!--<ImageCell Text="{Binding NameArabic}" Detail="{Binding NameHebrow}" ImageSource="{Binding Image}" TextColor="#19B5FE"/>-->
+                        <ViewCell>
+                            <StackLayout HeightRequest="60" Orientation="Horizontal">
+                                <Image Aspect="Fill" Source="{Binding Image}" HeightRequest="40" WidthRequest="40" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
+                                <Label TextColor="#19B5FE" Text="{Binding NameArabic}" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

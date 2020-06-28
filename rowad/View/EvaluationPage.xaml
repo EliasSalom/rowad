@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="rowad.View.EvaluationPage">
+    <ContentPage.Content>
+        <StackLayout Margin="10" VerticalOptions="FillAndExpand">
+            <Image x:Name="score" Source="good.png" Margin="30" HeightRequest="300" WidthRequest="250"/>
+            <Label x:Name="Comment" FontSize="Title"/>
+            <Button x:Name="HomePage" Text="الى الصفحه الرئيسيه" Clicked="HomePage_Clicked" Margin="5" BorderRadius="20"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

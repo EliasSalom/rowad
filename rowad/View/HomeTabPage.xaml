@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+                xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+            xmlns:o="clr-namespace:Octane.Xamarin.Forms.VideoPlayer;assembly=Octane.Xamarin.Forms.VideoPlayer"
+            xmlns:xf="clr-namespace:BottomBar.XamarinForms;assembly=BottomBar.XamarinForms"
+             xmlns:forms1="clr-namespace:MediaManager.Forms;assembly=MediaManager.Forms"
+             xmlns:video="clr-namespace:FormsVideoLibrary"
+             xmlns:mm="clr-namespace:MediaManager.Forms;assembly=MediaManager.Forms"
+             mc:Ignorable="d"
+             x:Class="rowad.View.HomeTabPage"
+             Title="الرئيسيه">
+    
+    <Grid VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions >
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <StackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2">
+            <!--<mm:VideoView x:Name="Player" Source="https://ia601406.us.archive.org/28/items/intro_20200204/intro.mp4" VerticalOptions="FillAndExpand" AutoPlay="True" ShowControls="True"/>-->
+            <Image Source="rowad.png"/>
+        </StackLayout>
+
+        <StackLayout x:Name="img1" Grid.Column="0" Grid.Row="2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="0,0,0,40">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ImageClicked"/>
+            </StackLayout.GestureRecognizers>
+            <Image Source="Image1.png"/>
+                <Label Text="فيديوهات" FontSize="Subtitle" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        </StackLayout>
+
+        <StackLayout x:Name="img2" Grid.Column="1" Grid.Row="2" Margin="0,0,0,40">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ImageClicked"/>
+            </StackLayout.GestureRecognizers>
+            <Image Source="Image2.png" VerticalOptions="Start"/>
+            <Label Text="استبيان" FontSize="Subtitle" HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <StackLayout x:Name="img3" Grid.Column="2" Grid.Row="2" Margin="0,0,0,40">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ImageClicked"/>
+            </StackLayout.GestureRecognizers>
+            <Image Source="Image3.png" VerticalOptions="Start"/>
+            <Label Text="من نحن" FontSize="Subtitle" HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <StackLayout x:Name="img5" Grid.Column="0" Grid.Row="3" Margin="0,20,0,0">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ImageClicked"/>
+            </StackLayout.GestureRecognizers>
+            <Image Source="Image5.png" VerticalOptions="Start"/>
+            <Label Text="تخصصك" FontSize="Subtitle" HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <StackLayout x:Name="img6" Grid.Column="1" Grid.Row="3" Margin="0,20,0,0">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ImageClicked"/>
+            </StackLayout.GestureRecognizers>
+            <Image Source="Image6.png"/>
+            <Label Text="فروع" FontSize="Subtitle" HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <StackLayout x:Name="img7" Grid.Column="2" Grid.Row="3" Margin="0,20,0,0">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ImageClicked"/>
+            </StackLayout.GestureRecognizers>
+            <Image Source="Image7.png"/>
+            <Label Text="iAM Career" FontSize="Subtitle" HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <StackLayout x:Name="img8" Grid.Column="0" Grid.Row="4" Margin="0,40,0,0">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ImageClicked"/>
+            </StackLayout.GestureRecognizers>
+            <Image Source="Image8.png"/>
+            <Label Text="منح دراسية" FontSize="Subtitle" HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <StackLayout x:Name="img9" Grid.Column="1" Grid.Row="4" Margin="0,40,0,0">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ImageClicked"/>
+            </StackLayout.GestureRecognizers>
+            <Image Source="Image9.png"/>
+            <Label Text="كليات" FontSize="Subtitle" HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <StackLayout x:Name="img10" Grid.Column="2" Grid.Row="4" Margin="0,40,0,0">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ImageClicked"/>
+            </StackLayout.GestureRecognizers>
+            <Image Source="Image10.png"/>
+            <Label Text="جامعات" FontSize="Subtitle"  HorizontalOptions="Center"/>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>
