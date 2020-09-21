@@ -125,6 +125,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BaseUrl_Android.cs" />
     <Compile Include="CustomWebViewRenderer.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -421,6 +422,7 @@
     <AndroidResource Include="Resources\drawable-xhdpi\AppIcon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\AppIcon.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\AppIcon.png" />
+    <AndroidAsset Include="Assets\index.html" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />

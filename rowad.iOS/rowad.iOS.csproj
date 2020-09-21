@@ -73,6 +73,7 @@
     <ApplicationIcon>ruwad.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BaseUrl_iOS.cs" />
     <Compile Include="CustomWebViewRenderer.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
@@ -583,6 +584,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <BundleResource Include="Resources\index.html" />
     <Content Include="ruwad.ico" />
   </ItemGroup>
 </Project>

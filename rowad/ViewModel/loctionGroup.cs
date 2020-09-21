@@ -72,15 +72,15 @@ namespace rowad.ViewModel
                 new LocationMod( "مرّكزة جت المثلث","الاء ابو مخ","1700555606","1700555606","بناية جمعية الجيل الذهبي الطابق الاول ","rowad.baQ.j@rowad.org.il" ,"pin.png"),
                 new LocationMod( "مرّكزة باقه الغربيه","الاء ابو مخ","1700555606","1700555606","قسم المعارف: مركز الشباب باقة بلدية باقة الغربية","Rowad.baq.j@rowad.org.il","pin.png"),
                 new LocationMod( "مركزه اللد والرمله","فداء شحاده","1700555606","1700555606","","lod.ramla@aluma.org.il","pin.png"),
-                new LocationMod( "كفر قاسم","לקראת גיוס"    ,"1700555606","1700555606","","","pin.png"),
+                new LocationMod( "كفر قاسم","לקראת גיוס"	,"1700555606","1700555606","","","pin.png"),
                 new LocationMod( "مركزة طوبا","ميرا هيب","1700555606"," 1700555606","قسم المعارف مجلس طوبا","mira@rowad.org.il","pin.png"),
                 new LocationMod( "مركزة الكعبيه طباش","معالي مزاريب","1700555606","1700555606","","zarazir@rowad.org.il","pin.png"),
                 new LocationMod( "مرّكزة الزرازير","معالي مزاريب","1700555606","1700555606","المركز الجماهيري الزرازير","zarazir@rowad.org.il","pin.png"),
-                new LocationMod( "مركز بسمة طبعون","معالي مزاريب","1700555606","1700555606","","zarazir@rowad.org.il","pin.png"),
+                new LocationMod( "مركز بسمة طبعون","معالي مزاريب","1700555606","1700555606","","zarazir@rowad.org.il","pin.png"),	
                 new LocationMod( "مركزة البطوف","نائله نجيدات","1700555606","1700555606","بطوفنا  - مركز شباب البطوف","rowad.batof@rowad.org.il","pin.png"),
                 new LocationMod( "مرّكزة البعينه نجيدات","نائله نجيدات","1700555606","1700555606","المجلس المحلي بعينه نجيدات","rowad.batof@rowad.org.il","pin.png"),
                 new LocationMod( "مرّكز بير المكسور","نائله نجيدات","1700555606","1700555606","مركز الريان بير المكسور","rowad.batof@rowad.org.il","pin.png"),
-                new LocationMod( "مرّكز قرى ميسجاف","جمانه كحيلي","1700555606","1700555606","","Rowad.shibli@rowad.org.il","pin.png"),
+                new LocationMod( "مرّكز قرى ميسجاف","جمانه كحيلي","1700555606","1700555606","","Rowad.shibli@rowad.org.il","pin.png"),	
                 new LocationMod( "مرّكزة شبلي ام الغنم","جمانه كحيلي","1700555606","1700555606","مركز ريان شبلي","rowad.shibli@rowad.org.il","pin.png"),
 
                 // فرفة هاني
@@ -91,6 +91,7 @@ namespace rowad.ViewModel
                 new LocationMod( "مرّكزة شرقي القدس","סלאם מחיסן","1700555606","1700555606","شعفاط / الشيخ جراح","salam@rowad.org.il","pin.png"),
                 new LocationMod( "مرّكزة شرقي القدس","داليا أبو سبيتان","1700555606","1700555606","شعفاط / الشيخ جراح","dalia@rowad.org.il","pin.png"),
                 new LocationMod( "مرّكزة شرقي القدس","רואן אבו קטיש","1700555606","1700555606","","rawan@rowad.org.il","pin.png")
+
             };
             userlist.Add(new locationGroup("مراكز المثلث والمركز", group2));
 
@@ -107,7 +108,7 @@ namespace rowad.ViewModel
                 new LocationMod( "مركزة شقيب السلام","ابتسام ابو سريحان", "1700555606","1700555606","مركز ريان شجيب السلام","shegev.shalom@rowad.org.il","pin.png"),
                 new LocationMod( "مرّكزة تل السبع","فاطمة ابو صعيليك","1700555606","1700555606","مركز ريان تل السبع","telsheva@rowad.org.il","pin.png"),
                 new LocationMod( "مركزة اللقية","حنين أبو بدر","1700555606","1700555606","مركز ريان اللقية","rowad.laqya@rowad.org.il","pin.png"),
-                new LocationMod( "مركز واحة الصحراء","سامح الهواشلة","1700555606","1700555606","","Sameh@rowad.org.il","pin.png")
+                new LocationMod( "مركز واحة الصحراء","سامح الهواشلة","1700555606","1700555606","","Sameh@rowad.org.il","pin.png"),
             };
             userlist.Add(new locationGroup("مراكز الجنوب", group3));
         }

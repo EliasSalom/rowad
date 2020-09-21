@@ -20,17 +20,9 @@
             HasBackgroundAnimation="True"/>
     </pages:PopupPage.Animation>
     <!--You can use any elements here which are extended from Xamarin.Forms.View-->
-    <StackLayout
-        BackgroundColor="White"
-        VerticalOptions="Center"
-        Padding="20"
-        Margin="20">
-        <Label Text="ارسل معلوماتك" VerticalOptions="Center"/>
-        <Image x:Name="logo" Source="rowad.png"/>
-        <Entry x:Name="FullName" Placeholder="اسمك الكامل"/>
-        <Entry x:Name="CityName" Placeholder="البلد"/>
-        <Entry x:Name="PhoneNumber" Placeholder="رقم هاتفك"/>
-        <Entry x:Name="Email" Placeholder="بريدك الالكتروني"/>
-        <Button x:Name="info_send" Text="ارسل" BorderColor="#19B5FE" BorderWidth="2" BorderRadius="20" Clicked="info_send_Clicked" VerticalOptions="Center"/>
+    <StackLayout Margin="10" VerticalOptions="FillAndExpand" BackgroundColor="White">
+        <Image x:Name="score" Source="good.png" Margin="30" HeightRequest="300" WidthRequest="250"/>
+        <Label x:Name="Comment" FontSize="Title"/>
+        <Button x:Name="HomePage" Text="الى الصفحه الرئيسيه" Clicked="HomePage_Clicked" Margin="5" BorderRadius="20"/>
     </StackLayout>
 </pages:PopupPage>

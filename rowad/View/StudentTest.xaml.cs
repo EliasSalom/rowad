@@ -15,6 +15,7 @@ using Android.OS;
 using System.IO;
 using Xamarin.Essentials;
 using Rg.Plugins.Popup.Extensions;
+using static rowad.View.WebPageLoad;
 
 namespace rowad
 {
@@ -29,13 +30,14 @@ namespace rowad
         Double progras=0.0;
         public StudentTest()
         {
-            InitializeComponent();
-            qV = new QuestionView();
-            answare.IsVisible = false;
-            goodbad.IsVisible = false;
-            Send.Text = "يلا";
-            Rowad_Logo.Source = "rowad.png";
-        }         
+            InitializeComponent();            
+              qV = new QuestionView();
+              answare.IsVisible = false;
+              goodbad.IsVisible = false;
+              Send.Text = "يلا";
+              Rowad_Logo.Source = "rowad.png";
+        }
+        
         private async void Send_Clicked(object sender, EventArgs e)
         {
             if(i==0)
@@ -68,10 +70,26 @@ namespace rowad
             }
             else
             {
-                if(CheckTest(arry)!=0)
                 await Navigation.PushPopupAsync(new Popup()).ConfigureAwait(true);
+                WebView webView = new WebView
+                {
+                    Source = new UrlWebViewSource
+                    {
+                        Url = "https://shlomital.formtitan.com/ruad_app",
+                    },
+                    VerticalOptions = LayoutOptions.FillAndExpand
+                };
+
+
+                // Build the page.
+                this.Content = new StackLayout
+                {
+                    Children =
+                {
+                    webView
+                }
+                };
             }
-            
         }
         private void Answare_ValueChanged(object sender, ValueChangedEventArgs e)
         {

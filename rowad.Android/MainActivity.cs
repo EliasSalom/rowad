@@ -11,6 +11,7 @@ using ImageCircle.Forms.Plugin.Droid;
 using Octane.Xamarin.Forms.VideoPlayer.Android;
 using MediaManager;
 using System.Linq;
+using System.IO;
 
 namespace rowad.Droid
 {
@@ -33,6 +34,7 @@ namespace rowad.Droid
             FormsVideoPlayer.Init();
             ImageCircleRenderer.Init();
             LoadApplication(new App());
+
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

@@ -23,21 +23,9 @@ namespace rowad.View
         public Popup()
         {
             InitializeComponent();
+            Comment.Text = test();
         }
 
-        public async void info_send_Clicked(object sender, EventArgs e)
-        {
-            //problem
-            if (!string.IsNullOrEmpty(FullName.Text) && !string.IsNullOrEmpty(PhoneNumber.Text))
-            {
-                sendMail();
-                await Navigation.PushModalAsync(new EvaluationPage(test())).ConfigureAwait(true);
-                await Navigation.PopPopupAsync().ConfigureAwait(true);
-            }
-            else {
-                await DisplayAlert("تحذير", "من فضلك الفراغ المناسب", "اكمل").ConfigureAwait(true);
-            }
-        }
         public string test()
         {
             string[] answare = new string[7];
@@ -51,31 +39,36 @@ namespace rowad.View
             answare[6] = "بالإضافة الى ذلك، من المهم أيضا أن تدرك أن المساومة والمرونة هي جزء لا يتجزأ من عمليّة الاختيار في حالات عديدة.";
             return answare[random.Next(0, 6)];
         }
-        public void sendMail()
-        {
-            MailMessage mail = new MailMessage();
-            SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");//your smtp mail server
-            mail.From = new MailAddress("rowad.he@gmail.com");
-            mail.To.Add("rowad.he@gmail.com");
-            mail.Subject = "משתמש חדש בשם: " + FullName.Text;
-            mail.Body = "שם מלא: " + FullName.Text + "\n" +
-                        "כתובת: " + CityName.Text + "\n" +
-                        "מספר טלפון: " + PhoneNumber.Text + "\n" +
-                        "כתובת דואר אלקטרוני: " + Email.Text;
-            //if you want to send an attachment just define filename
-            System.Net.Mail.Attachment attachment;
-            //attachment = new System.Net.Mail.Attachment(filename);
-            //mail.Attachments.Add(attachment);
-            //end email attachment part
 
-            SmtpServer.Port = 587;
-            SmtpServer.Credentials = new System.Net.NetworkCredential("rowad.he@gmail.com", "rowad2018");
-            SmtpServer.EnableSsl = true;
-            ServicePointManager.ServerCertificateValidationCallback = delegate (object sender, System.Security.Cryptography.X509Certificates.X509Certificate certificate, X509Chain chain, System.Net.Security.SslPolicyErrors sslPolicyErrors)
-            {
-                return true;
-            };
-            SmtpServer.Send(mail);
+        private async void HomePage_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopPopupAsync().ConfigureAwait(true);
         }
+        //public void sendMail()
+        //{
+        //    MailMessage mail = new MailMessage();
+        //    SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");//your smtp mail server
+        //    mail.From = new MailAddress("rowad.he@gmail.com");
+        //    mail.To.Add("rowad.he@gmail.com");
+        //    mail.Subject = "משתמש חדש בשם: " + FullName.Text;
+        //    mail.Body = "שם מלא: " + FullName.Text + "\n" +
+        //                "כתובת: " + CityName.Text + "\n" +
+        //                "מספר טלפון: " + PhoneNumber.Text + "\n" +
+        //                "כתובת דואר אלקטרוני: " + Email.Text;
+        //    //if you want to send an attachment just define filename
+        //    System.Net.Mail.Attachment attachment;
+        //    //attachment = new System.Net.Mail.Attachment(filename);
+        //    //mail.Attachments.Add(attachment);
+        //    //end email attachment part
+
+        //    SmtpServer.Port = 587;
+        //    SmtpServer.Credentials = new System.Net.NetworkCredential("rowad.he@gmail.com", "rowad2018");
+        //    SmtpServer.EnableSsl = true;
+        //    ServicePointManager.ServerCertificateValidationCallback = delegate (object sender, System.Security.Cryptography.X509Certificates.X509Certificate certificate, X509Chain chain, System.Net.Security.SslPolicyErrors sslPolicyErrors)
+        //    {
+        //        return true;
+        //    };
+        //    SmtpServer.Send(mail);
+        //}
     }
 }

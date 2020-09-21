@@ -11,7 +11,7 @@
             <StackLayout Padding="20" Spacing="20" HorizontalOptions="Center">
                     <Label Text="من نحن" FontSize="20" HorizontalOptions="Center" TextColor="#19B5FE"/>
                     <Image x:Name="pen"/>
-                    <Image x:Name="Rowad_img"/>
+                    <!--<Image x:Name="Rowad_img"/>-->
                 <Label x:Name="info" HorizontalOptions="CenterAndExpand"/>
                 <Label Text="الايميل" HorizontalOptions="Center"/>
                     <Label Text="office@rowad.org.il" HorizontalOptions="Center"/>
